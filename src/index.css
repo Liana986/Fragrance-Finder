@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global styling so the page shows properly */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-white text-black;
+}
+
+/* Container centering helper */
+.center-page {
+  @apply min-h-screen flex flex-col items-center justify-center text-center p-6;
+}
+
+/* Button styling */
+.btn-main {
+  @apply bg-black text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition;
+}
