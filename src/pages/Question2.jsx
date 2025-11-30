@@ -4,24 +4,22 @@ const options = ["For Women", "For Men", "Unisex"];
 
 function Question2({ answer, prev }) {
   return (
-    <div className="center-page">
-      <h2 className="text-3xl font-semibold mb-6">Who is this fragrance for?</h2>
+    <div className="page">
+      <h2 className="question">Who is this fragrance for?</h2>
 
-      <div className="flex flex-col gap-4 w-full max-w-sm">
+      <div className="options-column">
         {options.map((opt) => (
           <button
             key={opt}
+            className="option-btn"
             onClick={() => answer(opt)}
-            className="bg-gray-200 hover:bg-gray-300 p-3 rounded-xl transition font-medium"
           >
             {opt}
           </button>
         ))}
       </div>
 
-      <button onClick={prev} className="mt-6 text-blue-600 underline">
-        Back
-      </button>
+      <button onClick={prev} className="back-btn">Back</button>
     </div>
   );
 }

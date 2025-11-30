@@ -1,25 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Global styling so the page shows properly */
-html, body, #root {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+/* GENERAL FONTS */
 body {
-  @apply bg-white text-black;
+  font-family: "Inter", sans-serif;
+  background-color: #b4a9a9; 
+  margin: 0;
 }
 
-/* Container centering helper */
+/* CENTER PAGE WRAPPER */
 .center-page {
-  @apply min-h-screen flex flex-col items-center justify-center text-center p-6;
+  min-height: 100vh;
+  padding: 40px 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; 
+  text-align: center;
 }
 
-/* Button styling */
+/* MAIN BUTTON */
 .btn-main {
-  @apply bg-black text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition;
+  background-color: #111;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background-color: #333;
+}
+
+/* GRID BUTTONS */
+button {
+  transition: 0.25s;
 }

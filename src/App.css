@@ -1,25 +1,116 @@
-.App {
+/* ---------- GENERAL PAGE STYLE ---------- */
+.page {
   min-height: 100vh;
-  width: 100%;
-}
-
-/* Optional container styling, եթե պետք լինի */
-.page-container {
-  width: 100%;
-  min-height: 100vh;
+  background: #f7f3ef;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* Text center helper */
-.text-center {
+  gap: 28px;
   text-align: center;
 }
 
-/* Hide scrollbar in some pages (not required, optional) */
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+/* ---------- TITLES ---------- */
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #efe8e8;
+}
+
+.question {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-main {
+  background: #ececec;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background: #333;
+}
+
+.btn-main.disabled:disabled {
+  background: #bbb !important;
+  cursor: not-allowed;
+}
+
+/* Back button */
+.back-btn {
+  color: #183677;
+  font-size: 16px;
+  margin-top: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ---------- OPTIONS ---------- */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.options-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.option-btn {
+  background: #ddd;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.option-btn:hover {
+  background: #ccc;
+}
+
+/* ---------- INPUT ---------- */
+.date-input {
+  padding: 12px 16px;
+  font-size: 17px;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+}
+
+/* ---------- RESULT BOX ---------- */
+.result-box {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 340px;
+  text-align: left;
+}
+
+/* Sparkle */
+.sparkle {
+  font-size: 26px;
+  color: #666;
 }
