@@ -3,6 +3,7 @@ import React from "react";
 function ResultPage({ answers }) {
   return (
     <div className="page">
+      <div className="center-page">
       <h2 className="title">Your Personalized Result</h2>
 
       <div className="result-box">
@@ -12,6 +13,7 @@ function ResultPage({ answers }) {
       </div>
 
       <p className="sparkle">✨</p>
+    </div>
     </div>
   );
 }

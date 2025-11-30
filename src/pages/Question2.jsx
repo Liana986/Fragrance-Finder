@@ -5,6 +5,7 @@ const options = ["For Women", "For Men", "Unisex"];
 function Question2({ answer, prev }) {
   return (
     <div className="page">
+      <div className="center-page">
       <h2 className="question">Who is this fragrance for?</h2>
 
       <div className="options-column">
@@ -17,6 +18,7 @@ function Question2({ answer, prev }) {
             {opt}
           </button>
         ))}
+      </div>
       </div>
 
       <button onClick={prev} className="back-btn">Back</button>

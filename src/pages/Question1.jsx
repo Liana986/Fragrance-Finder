@@ -8,6 +8,7 @@ const options = [
 function Question1({ answer }) {
   return (
     <div className="page">
+      <div className="center-page">
       <h2 className="question">Which scent family do you prefer?</h2>
 
       <div className="options-grid">
@@ -21,6 +22,7 @@ function Question1({ answer }) {
           </button>
         ))}
       </div>
+    </div>
     </div>
   );
 }

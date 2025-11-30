@@ -5,6 +5,7 @@ function Question3({ answer, prev }) {
 
   return (
     <div className="page">
+      <div className="center-page">
       <h2 className="question">Choose your birth date</h2>
 
       <input
@@ -24,6 +25,8 @@ function Question3({ answer, prev }) {
 
       <button onClick={prev} className="back-btn">Back</button>
     </div>
+</div>
+
   );
 }
 
