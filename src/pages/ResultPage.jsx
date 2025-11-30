@@ -4,7 +4,7 @@ function ResultPage({ answers }) {
   return (
     <div className="page">
       <div className="center-page">
-      <h2 className="title">Your Personalized Result</h2>
+      <h2 className="title1">Your Personalized Result</h2>
 
       <div className="result-box">
         <p><strong>Scent Family:</strong> {answers.scentFamily}</p>

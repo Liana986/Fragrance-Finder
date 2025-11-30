@@ -12,9 +12,10 @@
 }
 
 /* ---------- TITLES ---------- */
-.title {
-  font-size: 42px;
-  font-weight: 800;
+.title1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 150px;
   letter-spacing: -1px;
 }
 
